@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+}
+
+body {
+    min-height: 100vh;
+    background-color: gray !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h5 {
+    height: 150px;
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.quiz-card {
+    width: 80vw;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.left-side {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.logo-card {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    object-position: 10%;
+    padding-bottom: 16px;
+}
+
+.right-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+    padding-right: 32px;
+    width: 70%;
+}
+
+.content {
+    margin-top: 16px;
+}
+
+.endscreen-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question {
+    margin-top: 8px;
+}
+
+.question-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 8px;
+}
+
+.color-change {
+    cursor: pointer;
+}
+
+.color-change:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.bg-success, .bg-danger {
+    color: white !important;
+}
+
+.end-logo {
+    height: 150px;
+    width: 150px;
+    object-fit: contain;
+    padding-bottom: 16px;
+}
+
+.endscreen-thumb {
+    height: 100px;
+    width: 100px;
+    margin-top: 30px;
+}
+
+.progress {
+    width: 100%;
+}
+
+.restart-button {
+    margin-top: 16px;
+}
+
+@media (max-width: 1000px) {
+    .left-side {
+        display: none;
+    }
+
+    .btn {
+        margin: 8px;
+    }
+
+    .right-card {
+        padding: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .quiz-card, h5 {
+        height: auto;
+    }
+
+    h5 {
+        margin-bottom: 8px;
+    }
+
+    .question-footer {
+        flex-direction: column;
+    }
+}
